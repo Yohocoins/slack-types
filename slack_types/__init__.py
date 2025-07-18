@@ -9,7 +9,6 @@ from .conversation import (
     Topic, Purpose, Tab, Properties, LatestMessage
 )
 
-__version__ = "0.1.0"
 __all__ = [
     "Team", "TeamInfoResponse", "TeamIcon",
     "User", "UserInfoResponse", "UserProfile",

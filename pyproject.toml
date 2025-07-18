@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "slack-types"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Type definitions for Slack API using Pydantic"
 readme = "README.md"
 license = "MIT"
