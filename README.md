@@ -2,7 +2,7 @@
 
 Type definitions for Slack API using Pydantic models.
 
-## Installation
+## 📦 Installation
 
 ### From GitHub (Recommended)
 
@@ -10,7 +10,7 @@ Type definitions for Slack API using Pydantic models.
 pip install git+https://github.com/Yohocoins/slack-types.git
 ```
 
-## Quick Start
+## 🚀 Quick Start
 
 ```python
 from slack_types import TeamInfoResponse, UserInfoResponse, ConversationInfoResponse
@@ -25,13 +25,13 @@ user_response = UserInfoResponse.model_validate(user_data)
 conversation_response = ConversationInfoResponse.model_validate(conversation_data)
 ```
 
-## Available Types
+## 📋 Available Types
 
 - **Team**: `TeamInfoResponse`, `Team`, `TeamIcon`
 - **User**: `UserInfoResponse`, `User`, `UserProfile`
 - **Conversation**: `ConversationInfoResponse`, `Channel`, `DirectMessage`, `DirectMessageWithMembers`
 
-## Contributing
+## 🤝 Contributing
 
 We welcome contributions! Please follow these guidelines:
 
