@@ -14,4 +14,4 @@ __all__ = [
     "User", "UserInfoResponse", "UserProfile",
     "Channel", "DirectMessage", "DirectMessageWithMembers", "ConversationInfoResponse",
     "Topic", "Purpose", "Tab", "Properties", "LatestMessage"
-] 
+]
