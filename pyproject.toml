@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "slack-types"
+version = "0.1.0"
+description = "Type definitions for Slack API using Pydantic"
+readme = "README.md"
+license = "MIT"
+authors = [
+    {name = "Gustavo Bordin", email = "self.bordin@gmail.com"},
+]
+maintainers = [
+  {name = "Gustavo Bordin", email = "self.bordin@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: MIT License",
+    "Programming Language :: Python",
+    "Topic :: Python Modules :: Slack",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "pydantic>=2.11.7",
+]
+
+[project.urls]
+Repository = "https://github.com/Yohocoins/slack-types"
+Issues = "https://github.com/Yohocoins/slack-types/issues"
