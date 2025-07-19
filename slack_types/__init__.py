@@ -2,7 +2,7 @@
 Slack Types - Type definitions for Slack API using Pydantic
 """
 
-from .team import TeamInfo, TeamInfoResponse, TeamIcon
+from .team import Team, TeamInfoResponse, TeamIcon
 from .user import User, UserInfoResponse, UserProfile
 from .conversation import (
     Channel, DirectMessage, DirectMessageWithMembers, ConversationInfoResponse,
