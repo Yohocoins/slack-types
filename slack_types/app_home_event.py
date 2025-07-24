@@ -2,7 +2,6 @@
 App Home event-related type definitions for Slack API
 """
 
-from typing import List, Optional
 from pydantic import BaseModel, Field
 
 
@@ -17,7 +16,7 @@ class AppHomeOpenedEvent(BaseModel):
 
 class Authorization(BaseModel):
     """Authorization information"""
-    enterprise_id: Optional[str] = Field(None, description="Enterprise ID")
+    enterprise_id: str | None = Field(None, description="Enterprise ID")
     team_id: str = Field(description="Team ID")
     user_id: str = Field(description="User ID")
     is_bot: bool = Field(description="Whether the user is a bot")
@@ -33,5 +32,5 @@ class AppHomeOpenedEventCallback(BaseModel):
     type: str = Field(description="Callback type")
     event_id: str = Field(description="Event ID")
     event_time: int = Field(description="Event time")
-    authorizations: List[Authorization] = Field(description="Authorizations")
+    authorizations: list[Authorization] = Field(description="Authorizations")
     is_ext_shared_channel: bool = Field(description="Whether it's an external shared channel") 

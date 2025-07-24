@@ -2,8 +2,7 @@
 User-related type definitions for Slack API
 """
 
-from pydantic import BaseModel, Field, EmailStr
-from typing import List, Optional
+from pydantic import BaseModel, Field
 
 
 class StatusEmojiDisplayInfo(BaseModel):
@@ -37,7 +36,7 @@ class UserProfile(BaseModel):
     status_text: str = Field(description="Status text")
     status_text_canonical: str = Field(description="Canonical status text")
     status_emoji: str = Field(description="Status emoji")
-    status_emoji_display_info: List[StatusEmojiDisplayInfo] = Field(description="Status emoji display info")
+    status_emoji_display_info: list[StatusEmojiDisplayInfo] = Field(description="Status emoji display info")
     status_expiration: int = Field(description="Status expiration timestamp")
 
 
