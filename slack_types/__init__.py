@@ -8,9 +8,12 @@ from .conversation import (
     Channel, DirectMessage, DirectMessageWithMembers, ConversationInfoResponse,
     Topic, Purpose, Tab, Properties, LatestMessage
 )
-from .events import (
-    MessageEvent, EventCallback, Authorization, RichTextBlock, RichTextSection,
+from .message_event import (
+    MessageEvent, MessageEventCallback, Authorization, RichTextBlock, RichTextSection,
     EmojiElement, TextElement, UserElement
+)
+from .app_home_event import (
+    AppHomeOpenedEvent, AppHomeOpenedEventCallback
 )
 
 __version__ = "0.1.0"
@@ -20,6 +23,7 @@ __all__ = [
     "User", "UserInfoResponse", "UserProfile",
     "Channel", "DirectMessage", "DirectMessageWithMembers", "ConversationInfoResponse",
     "Topic", "Purpose", "Tab", "Properties", "LatestMessage",
-    "MessageEvent", "EventCallback", "Authorization", "RichTextBlock", "RichTextSection",
-    "EmojiElement", "TextElement", "UserElement"
+    "MessageEvent", "MessageEventCallback", "Authorization", "RichTextBlock", "RichTextSection",
+    "EmojiElement", "TextElement", "UserElement",
+    "AppHomeOpenedEvent", "AppHomeOpenedEventCallback"
 ]
